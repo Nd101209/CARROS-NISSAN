@@ -1,0 +1,77 @@
+:root {
+    --black_ND: #b38e58;
+    --branco: #555;
+    --rosa: #ff00ff;
+    --azul: #001aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--black_ND);
+    color: var(--branco);
+}
+
+
+header {
+    background: linear-gradient(90deg, var(--rosa), var(--azul));
+    color: var(--verde);
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+}
+
+header p {
+    font-size: 1, 1;
+    margin-top: 20px;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.carro {
+    background-color: aqua;
+    width: 280px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carro img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.carro:hover {
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(8px);
+}
+
+.carro h2 {
+    font-size: 1.2rem;
+    color: azure(160, 24, 24);
+    margin: 10px 0 10px;
+}
